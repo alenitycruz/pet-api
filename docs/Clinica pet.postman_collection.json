@@ -1,0 +1,669 @@
+{
+	"info": {
+		"_postman_id": "3f0df239-75e0-456c-9372-22d9e0bbf5ff",
+		"name": "Clinica pet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21048376"
+	},
+	"item": [
+		{
+			"name": "Veterinario",
+			"item": [
+				{
+					"name": "criar veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"...\",\r\n    \"licensa\": \"...\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"...\",\r\n        \"numero\": \"...\",\r\n        \"complemento\": \"...\",\r\n        \"cidadeEstado\": \"...\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/veterinario",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veterinario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar todos os veterinarios",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veterinario",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veterinario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veterinario/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veterinario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Alessandra Cruz\",\r\n    \"licensa\": \"1234567\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua do Hospício\",\r\n        \"numero\": \"111\",\r\n        \"complemento\": \"apto 105\",\r\n        \"cidadeEstado\": \"Recife-Pernambuco\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/veterinario/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veterinario",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir veterinario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/veterinario/3",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"veterinario",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tutor",
+			"item": [
+				{
+					"name": "criar tutor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"...\",\r\n    \"identidade\": \"...\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"...\",\r\n        \"numero\": \"...\",\r\n        \"complemento\": \"...\",\r\n        \"cidadeEstado\": \"...\"\r\n\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tutor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar todos os tutores",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tutor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tutor"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar tutor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tutor/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tutor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar tutor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"O Mascara\",\r\n    \"identidade\": \"00000000000\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Rua das Travessuras\",\r\n        \"numero\": \"000\",\r\n        \"complemento\": \"predio abandonado\",\r\n        \"cidadeEstado\": \"Nova York-Estados Unidos\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tutor/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tutor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir tutor",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tutor/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tutor",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cachorro",
+			"item": [
+				{
+					"name": "criar cachorro",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"...\",\r\n    \"raca\": \"...\",\r\n    \"caracteristica\": \"...\",\r\n    \"dataNascimento\": \"...\",\r\n    \"tamanho\": \"...\",\r\n    \"tutor\" : {\r\n       \"id\" : 1\r\n    }\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cachorro",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cachorro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar todos os cachorros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cachorro",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cachorro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excluir cachorro",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/cachorro/50",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cachorro",
+								"50"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar cachorro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cachorro/12",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cachorro",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar cachorro",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Hex\",\r\n    \"raca\": \"Pastor Alemao\",\r\n    \"caracteristica\": \"marrom com preto, corpulento, temperamento ativo, cao guarda\",\r\n    \"dataNascimento\": \"09/06/2020\",\r\n    \"tamanho\": \"porte grande\",\r\n    \"tutor\" : {\r\n       \"id\" : 1\r\n    }\r\n        \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/cachorro/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"cachorro",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "atendimento",
+			"item": [
+				{
+					"name": "criar atendimento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"veterinario\" : {\r\n       \"id\" : 1\r\n    },\r\n    \"cachorro\" : {\r\n       \"id\" : 1\r\n    },\r\n    \"dataHoraAtendimento\": \"26/07/2022 13:14\",\r\n    \"queixa\": \"mal cheiro nas fezes\",\r\n    \"diagnostico\": \"Verminoses\",\r\n    \"comentario\": \"Foi receitado NatuVerme\"   \r\n        \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/atendimento",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"atendimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar todos os atendimentos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/atendimento",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"atendimento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "buscar atendimento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/atendimento/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"atendimento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editar atendimento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwiaXNzIjoiUHJvZ3JhbWFTVEFSVEVSIiwiZXhwIjoxNjU5MTAwMTM1fQ.4JiLv8oXN9MbTI-R2cKXdzUNwZ6KkEQsCkDYvT225hs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"id\" : 1,\r\n    \"veterinario\" : {\r\n       \"id\" : 1\r\n    },\r\n    \"cachorro\" : {\r\n       \"id\" : 1\r\n    },\r\n    \"dataHoraAtendimento\": \"26/07/2022 13:14\",\r\n    \"queixa\": \"mal cheiro nas fezes\",\r\n    \"diagnostico\": \"Verminoses\",\r\n    \"comentario\": \"Foi receitado NatuVerme\"   \r\n        \r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/atendimento/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"atendimento",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Conficuração de Segurança",
+			"item": [
+				{
+					"name": "gerar token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"admin@admin.com\",\r\n    \"senha\" : \"1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
